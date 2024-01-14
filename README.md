@@ -2,7 +2,7 @@
 > This is a hard-forked repository of [dp-mongodb-in-memory](https://github.com/ONSdigital/dp-mongodb-in-memory). The reason for the hard fork is that the main library does not support the Windows OS. Therefore, we had to make some quick changes to run our tests on a Windows system. Unfortunately, we only commented out some lines and disabled some features, such  as the watcher, for now. Later, we should modify this library to fully support Windows.
 
 # How To Use in Windows
-To use this library on a Windows OS, you should download the [MongoDB binary](https://www.mongodb.com/download-center/community/releases) and unzip the contents into this location: C:\Users\${user}\mongo. Additionally, since we don't have a watcher in Windows OS, you should stop the server after tests using the Stop(ctx) method. After Test Be sure to check Task Manager to see if you have processes named 'MongoDB Database Server' or similar, to ensure there are no running processes."
+To use this library on a Windows OS, you should download the [MongoDB binary](https://www.mongodb.com/download-center/community/releases) and unzip the contents into this location: `C:\Users\${user}\mongo`. Additionally, since we don't have a watcher in Windows OS, you should stop the server after tests using the Stop(ctx) method. After Test Be sure to check Task Manager to see if you have processes named 'MongoDB Database Server' or similar, to ensure there are no running processes."
 
 # dp-mongodb-in-memory
 Library that runs an in-memory MongoDB instance for Go unit tests.
